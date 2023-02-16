@@ -105,6 +105,16 @@
 						<javaVersion>jre11</javaVersion>
 						<webContainer></webContainer>
 					</runtime>
+					<deployment>
+						<resources>
+							<resource>
+								<directory>${project.basedir}/target</directory>
+								<includes>
+									<include>*.war</include>
+								</includes>
+							</resource>
+						</resources>
+					</deployment>
 					<pricingTier>F1</pricingTier>
 				</configuration>
 			</plugin>
